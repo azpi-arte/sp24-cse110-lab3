@@ -1,0 +1,188 @@
+/* This is a comment. */
+
+@font-face {
+    font-family: 'Oswald';
+    src: url('src\Inter,Oswald,Space_Mono\Oswald\Oswald-Regular.ttf') format('ttf');
+}
+
+* {
+    /* The text uses sans-serif Oswald does not work*/
+    font-family: 'Oswald', sans-serif;
+    color: color(display-p3 .9 0.9 0.9);
+    @media (max-width: 600px) {
+        font-size: 12px
+    }
+}
+
+:root{ 
+    --main-color--: #000000
+}
+
+body {
+    background-color: var(--main-color--, rgb(0, 0, 0));
+    text-align: center;
+    margin: 20px;
+    display: block;
+}
+
+header {
+    padding: 15px 15px 20px 20px;
+    margin: auto;
+    text-align: left;
+}
+
+h1 {
+    text-align: left;
+}
+
+p {
+    text-align: left;
+}
+
+ol,ul {
+    padding: 8px, 8px, 8px, 8px;
+    margin: 9px
+}
+
+li {
+    color: color-mix(in srgb, white 80%, black 10%);
+    list-style-position: inside;
+}
+
+input, select, datalist, button, textarea {
+    color: white; 
+    background-color: hsl(0, 0%, 20%);
+    border: 1px solid rgb(204, 204, 204); 
+    border-style: dashed;
+    margin: 0.1in;
+    padding-left: 0.25cm, ;
+    padding-right: 0.25cm, ;
+    padding-top: 0.25cm, ;
+    padding-bottom: 0.25cm, ;
+
+}
+
+.business {
+    background-color: #161616;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    text-align: left;
+    margin: 20px, 20px, 20px, 20px;
+    padding: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.51);
+    border-width: 2px;
+    height: 110%;
+}
+
+
+img:active {
+    border-radius: 20%;
+}
+
+#attendance {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#recordings {
+    display: grid;
+    grid-template-rows: 400px 200px 400px;
+    grid-template-columns: 300px 300px 300px;
+    height: auto;
+    align-content: center;
+
+    h1 {
+        letter-spacing: 10px;
+    }
+}
+
+
+.record {
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#record1{
+    grid-area:1 / 1 / 2 / 2;
+}
+
+#record2{
+    grid-area:2 / 2 / 3 / 3;
+}
+
+#record3{
+    grid-area:3 / 3 / 4 / 4;
+} 
+
+#secret {
+    display: none;
+}
+
+body h1 {
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+h1 ~ p {
+    letter-spacing: 0.3ch;
+} 
+
+h4 + p {
+    line-height: 1.4;
+}
+
+fieldset > label {
+    font-size: 17px;
+}
+
+a img {
+    @media (max-width: 600px) {
+        display: none;
+    }
+}
+
+#form-section {
+    background-color: hsla(0, 0%, 11%,);
+}
+
+div.business-item {
+    background-color: #1e1e1e;
+    margin: 4px;
+    padding: 8px;
+    border: 1px solid grey
+}
+
+
+#azpi-logo {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 10%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#azpi-logo:hover {
+    border: none;
+    width: 12%;
+    height: auto;
+}
+
+[food="hamburger"] {
+    font-size: 30px;
+    position: relative;
+}
+
+#wow {
+    position: absolute;
+    top: -60px;
+    left: 40px;
+}
+
+div:has(audio) {
+    margin: 20px;
+    border: 1px solid grey;
+}
