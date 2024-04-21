@@ -1,2 +1,3 @@
-# LAB 3 yippee
-https://azpi-arte.github.io/Lab2_Starter/
+# Lab3 pages link
+
+https://azpi-arte.github.io/sp24-cse110-lab3/ 

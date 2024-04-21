@@ -8,13 +8,14 @@
 * {
     /* The text uses sans-serif Oswald does not work*/
     font-family: 'Oswald', sans-serif;
-    color: color(display-p3 .9 0.9 0.9);
+    color: color(srgb 0.9 0.9 0.9);
+
     @media (max-width: 600px) {
         font-size: 12px
     }
 }
 
-:root{ 
+:root {
     --main-color--: #000000
 }
 
@@ -39,26 +40,30 @@ p {
     text-align: left;
 }
 
-ol,ul {
-    padding: 8px, 8px, 8px, 8px;
+ol,
+ul {
+    padding: 8px 8px 8px 8px;
     margin: 9px
 }
 
 li {
-    color: color-mix(in srgb, white 80%, black 10%);
+    color: color-mix(srgb, white 80%, black 10%);
     list-style-position: inside;
 }
 
-input, select, datalist, button, textarea {
-    color: white; 
+input,
+select,
+datalist,
+button,
+textarea {
+    color: white;
     background-color: hsl(0, 0%, 20%);
-    border: 1px solid rgb(204, 204, 204); 
-    border-style: dashed;
+    border: 1px dashed rgb(204, 204, 204);
     margin: 0.1in;
-    padding-left: 0.25cm, ;
-    padding-right: 0.25cm, ;
-    padding-top: 0.25cm, ;
-    padding-bottom: 0.25cm, ;
+    padding-left: 0.25cm;
+    padding-right: 0.25cm;
+    padding-top: 0.25cm;
+    padding-bottom: 0.25cm;
 
 }
 
@@ -69,16 +74,17 @@ input, select, datalist, button, textarea {
     align-items: center;
     flex-direction: row-reverse;
     text-align: left;
-    margin: 20px, 20px, 20px, 20px;
+    margin: 20px 20px 20px 20px;
     padding: 8px;
     border: 1px solid rgba(255, 255, 255, 0.51);
     border-width: 2px;
     height: 110%;
+    min-width: 450px;
 }
-
 
 img:active {
     border-radius: 20%;
+    border-style: dashed;
 }
 
 #attendance {
@@ -98,7 +104,6 @@ img:active {
     }
 }
 
-
 .record {
     margin-top: 30px;
     margin-bottom: 100px;
@@ -106,17 +111,17 @@ img:active {
     margin-right: 8px;
 }
 
-#record1{
-    grid-area:1 / 1 / 2 / 2;
+#record1 {
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-#record2{
-    grid-area:2 / 2 / 3 / 3;
+#record2 {
+    grid-area: 2 / 2 / 3 / 3;
 }
 
-#record3{
-    grid-area:3 / 3 / 4 / 4;
-} 
+#record3 {
+    grid-area: 3 / 3 / 4 / 4;
+}
 
 #secret {
     display: none;
@@ -126,15 +131,15 @@ body h1 {
     text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-h1 ~ p {
+h1~p {
     letter-spacing: 0.3ch;
-} 
+}
 
-h4 + p {
+h4+p {
     line-height: 1.4;
 }
 
-fieldset > label {
+fieldset>label {
     font-size: 17px;
 }
 
@@ -145,7 +150,7 @@ a img {
 }
 
 #form-section {
-    background-color: hsla(0, 0%, 11%,);
+    background-color: hsla(0, 0%, 11%, 100%);
 }
 
 div.business-item {
